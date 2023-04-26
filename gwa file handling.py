@@ -13,7 +13,13 @@ with open("students_gwa.txt") as input_students_gwa:
     for line in input_students_gwa:
         student, gwa_str = line.strip().split(": ")
         # If the GWA < lowest possible GWA and > invalid GWA, get highest GWA and name
+        gwa = float(gwa_str)
+        if lowest_gwa < gwa < highest_gwa:
+            highest_gwa = gwa
+            highest_student = student
+            highest_student_gwa = highest_student + " - " + str(highest_gwa)
         # If there is more than one student who got the highest GWA, record it as well
 
 
 # Print the output
+print(highest_student_gwa)
