@@ -23,4 +23,7 @@ with open("students_gwa.txt") as input_students_gwa:
             highest_student_gwa = highest_student_gwa + "\n" + student + " - " + str(gwa)
 
 # Print the output
+print("\n", "\033[93m=" * 80, "\n")
+print("\033[1m\033[95mThe student/s with the highest GWA:\x1B[3m\033[92m\n")
 print(highest_student_gwa)
+print("\n", "\033[93m=" * 80, "\n")
