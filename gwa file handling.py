@@ -19,7 +19,8 @@ with open("students_gwa.txt") as input_students_gwa:
             highest_student = student
             highest_student_gwa = highest_student + " - " + str(highest_gwa)
         # If there is more than one student who got the highest GWA, record it as well
-
+        elif highest_gwa == gwa:
+            highest_student_gwa = highest_student_gwa + "\n" + student + " - " + str(gwa)
 
 # Print the output
 print(highest_student_gwa)
