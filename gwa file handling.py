@@ -4,7 +4,9 @@
 
 # Open students_gwa.txt (read)
 with open("students_gwa.txt") as input_students_gwa:
- 
+    # Read the inputs for students and GWA line by line and split the name and their GWA
+    for line in input_students_gwa:
+        student, gwa_str = line.strip().split(": ")
 
 
 
